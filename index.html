@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de controle de acesso</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to right, rgb(85, 186, 217), rgb(182, 236, 244));
+        }
+        .box{
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 15px;
+            border-radius: 15px;
+            width: 40%;
+        }
+        fieldset{
+            border: 3px solid rgb(0, 178, 237);
+        }
+        legend{
+            border: 1px solid ecb500;
+            padding: 10px;
+            text-align: center;
+            background-color: ecb500;
+            border-radius: 8px;
+        }
+        .inputBox{
+            position: relative;
+        }
+        .inputURL{
+            background: none;
+            border: none;
+            border-bottom: 1px solid white;
+            outline: none;
+            color: white;
+            font-size: 15px;
+            width: 65%;
+            letter-spacing: 2px;
+        }
+        .labelInput{
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            pointer-events: none;
+            transition: .5s;
+        }
+        .inputURL:focus ~ .labelInput,
+        .inputURL:valid ~ .labelInput{
+            top: -20px;
+            font-size: 12px;
+            color: ecb500;
+        }
+        #submit{
+            background-image: linear-gradient(to right,rgb(85, 186, 217), rgb(182, 236, 244));
+            width: 100%;
+            border: none;
+            padding: 15px;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        #submit:hover{
+            background-image: linear-gradient(to right,rgb(85, 186, 217), rgb(182, 236, 244));
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+            <fieldset>
+                <legend><b>Sistema de controle de acesso</b></legend>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="url" id="url" class="inputURL" required>
+                    <label for="url" class="labelInput">URL</label>
+                </div>                    
+                <br><br>
+                    <label for="tipo">Ação</label>
+                    <select id="tipo" name="tipo">
+                        <option value="adicionar">adicionar</option>
+                        <option value="remover">remover</option>
+                    </select>
+                <br><br>
+   
+                <button onclick="processar()" name="submit" id="submit"> enviar </button>
+                <div class="alert">
+            </fieldset>
+    </div>
+<script>
+    function processar(){
+        var endereco = document.getElementById("url").value;
+    var acao = document.getElementById("tipo").value;
+     var uri = "http://127.0.0.1:5176/squid/" + endereco + "/" + acao
+        window.location.href=uri;
+    }
+</script>
+</body>
+</html>
