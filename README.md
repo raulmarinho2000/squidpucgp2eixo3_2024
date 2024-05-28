@@ -7,13 +7,10 @@
 
 ## Download e Configuração do Webserver
 
-### Faça o download do arquivo .zip no GitHub.
-
-### Adicione o diretório:
-
-Extraia o conteúdo do arquivo .zip para o seguinte diretório:
+### Utilize o Git Clone para clonar o repositório
 ```
-home/usuário/webserver
+cd resources
+gh repo clone raulmarinho2000/squidpucgp2eixo3_2024
 ```
 
 ### Substitua a pasta `webserver` existente pela pasta extraída do arquivo .zip.
