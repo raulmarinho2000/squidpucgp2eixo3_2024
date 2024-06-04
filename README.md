@@ -66,3 +66,11 @@ nano /var/lib/squidguard/db/hep/block_domain
 2. **Será aberto o arquivo e nele você poderá visualizar todos os domínios que foram adicionados.**
 
 Siga estes passos para garantir que o webserver está configurado corretamente e que os URLs estão sendo gerenciados conforme necessário.
+
+## Como o projeto impactou o cliente?
+
+A solução apresentada é uma excelente possível ferramenta a ser implementada nas filiais da empresa, visto que a matriz já possui um serviço similar e as filiais não possuem nenhum serviço de controle de acessos. Nosso projeto causou no cliente a percepção de uma alternativa de implementação de serviço de controle de acessos de forma mais simples e eficaz.
+
+## Como o desenvolvimento do projeto impactou na formação do grupo?
+
+O desenvolvimento do projeto ampliou nossos conhecimentos na área de infraestrutura e segurança de rede, nos possibilitando desenvolver habilidades em manuseio de sistemas operacionais Linux via Terminal, configuração de Proxy Server e manipulação via ShellScript/Dotnet.
