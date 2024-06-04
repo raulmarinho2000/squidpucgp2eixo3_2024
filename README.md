@@ -77,5 +77,5 @@ O desenvolvimento do projeto ampliou nossos conhecimentos na área de infraestru
 
 ## Registro visual da reunião com o cliente
 
-!Clique abaixo para acessar a imagem:
+Clique abaixo para acessar a imagem:
 https://github.com/raulmarinho2000/squidpucgp2eixo3_2024/blob/041493c8fbd5045c9d8b158c37f350aa5216f8b7/MicrosoftTeams-image.png
